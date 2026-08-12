@@ -48,6 +48,14 @@ Key findings before modeling:
 
 XGBoost's most influential features were `V14`, `V10`, and `V2` — consistent with the strongest signals identified during EDA, validating that the model learned genuine patterns rather than noise.
 
+![Feature Importance](features.png)
+
+### Threshold tuning
+
+The precision-recall curve below shows that recall stays flat (~0.80) across a wide range of thresholds while precision keeps climbing — meaning the threshold could be raised well past the default 0.5 with little to no cost in missed fraud.
+
+![Precision-Recall Threshold Curve](threshold.png)
+
 ### Final model: confusion matrix (threshold = 0.7)
 
 | | Predicted Legitimate | Predicted Fraud |
@@ -56,6 +64,8 @@ XGBoost's most influential features were `V14`, `V10`, and `V2` — consistent w
 | **Actual Fraud** | 20 | 78 |
 
 At this threshold, the model catches **80% of fraud (78/98)** while incorrectly flagging only **7 out of 56,864 legitimate transactions** — a false-alarm rate of roughly 0.01%.
+
+![Confusion Matrix](cm.png)
 
 ## Business interpretation
 
