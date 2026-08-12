@@ -86,3 +86,7 @@ In a real deployment, the cost of a missed fraud case (direct financial loss, ch
 ## Acknowledgments
 
 Built with guidance from Claude (Anthropic) — used as a step-by-step mentor to work through modeling decisions, understand the reasoning behind each technique, and interpret results, rather than to generate the analysis wholesale.
+
+## Contact
+
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/said-gurbanov-4a77763b8/).
